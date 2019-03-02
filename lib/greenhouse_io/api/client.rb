@@ -76,7 +76,7 @@ module GreenhouseIo
     end
 
     def eeoc(options = {})
-      url = options[:next].nil? ? "/eeoc" : options[:next]
+      url = options["next"].nil? ? "/eeoc" : options["next"]
 
       get_from_harvest_api url, options
     end
