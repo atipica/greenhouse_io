@@ -87,6 +87,10 @@ module GreenhouseIo
       get_from_harvest_api(url)
     end
 
+    def interviews(options = {})
+      get_from_harvest_api "/scheduled_interviews", options
+    end
+
     private
 
     def path_id(id = nil)
